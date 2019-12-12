@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+body{margin: 0;
+padding: 0;}
+.alert-reklam{
+  background-color:#F6475F;
+  padding: 12px;
+}
+.box-reklam{
+ 
+  display: flex;
+
+  align-items: center;
+ 
+  justify-content: center;
+  span{
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    a{
+      color:white;
+      text-decoration: none;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+    }
+    .close{
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      span{
+        font-size: 25px;
+        margin: 0px 0 4px 5px;
+        font-weight: bold;
+        display: inline-block;
+        text-shadow: 0 1px 0 #fff;
+        &:hover{
+          color: white;
+
+        }
+     
+      }
+    }
+}
+

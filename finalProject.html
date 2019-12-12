@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eduglobal - Education & course</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/2e4a13535b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+
+    <script src="https://kit.fontawesome.com/b58e494fbb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- alert section -->
+        <div class="alert-reklam">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="box-reklam">
+                            <span>Unlimited online course & video tutorials downloads! <a href="#">Get 30% off</a>
+                            </span>
+                            <button class="close" type="button" data-dismiss="alert-reklam" aria-label="close">
+                                <span class="x" aria-hidden="true">x</span>
+                                </buton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--alert section end-->
+
+
+        <!-- login-modal section -->
+
+        <div class="modal fade lr_popup" id="Login" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content border-0">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="row no-gutters">
+                            <div class="col-lg-5 ">
+                                <div class="image">
+                                    <img src="image/login_img.jpg" alt="loginImg">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="registration">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="login-tab1" data-toggle="tab" href="#login"
+                                                role="tab" aria-controls="login" aria-selected="true">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="signup-tab1" data-toggle="tab" href="#signup"
+                                                role="tab" aria-controls="signup" aria-selected="false">Sign Up</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="login" role="tabpanel">
+                                            <div class="heading_s1 mb-3">
+                                                <h4>Login</h4>
+                                            </div>
+                                            <form method="post" class="login">
+                                                <div class="form-group">
+                                                    <input type="text" required="" class="form-control" name="email"
+                                                        placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" required="" type="password"
+                                                        name="password" placeholder="Password">
+                                                </div>
+                                                <div class="login_footer form-group">
+                                                    <a href="#">Lost your password?</a>
+                                                    <div class="chek-form mb-3">
+                                                        <div class="custome-checkbox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                name="checkbox" id="exampleCheckbox3" value="">
+                                                            <label class="form-check-label"
+                                                                for="exampleCheckbox3">Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-default btn-block"
+                                                        name="login">Login
+                                                    </button>
+                                                </div>
+                                            </form>
+                                            <div class="different_login">
+                                                <span> or</span>
+                                            </div>
+                                            <ul class="btn-login list_none text-center">
+                                                <li><a href="#" class="btn btn-facebook"><i
+                                                            class="fab fa-facebook-f"></i>Facebook</a></li>
+                                                <li><a href="#" class="btn btn-google"><i
+                                                            class="fab fa-google-plus"></i>Google</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="signup" role="tabpanel">
+                                            <div class="heading_s1 mb-3">
+                                                <h4>Sign Up</h4>
+                                            </div>
+                                            <form method="post" class="login">
+                                                <div class="form-group">
+                                                    <input type="text" required="" class="form-control" name="username"
+                                                        placeholder="Username">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" required="" class="form-control" name="email"
+                                                        placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" required="" type="password"
+                                                        name="password" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" required="" type="password"
+                                                        name="cpassword" placeholder="Confirm Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-default btn-block"
+                                                        name="login">Sign Up</button>
+                                                </div>
+                                            </form>
+                                            <div class="different_login">
+                                                <span> or</span>
+                                            </div>
+                                            <ul class="btn-login list_none text-center">
+                                                <li><a href="#" class="btn btn-facebook"><i
+                                                            class="fab fa-facebook-f"></i>Facebook</a></li>
+                                                <li><a href="#" class="btn btn-google"><i
+                                                            class="fab fa-google-plus"></i>Google</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login-modal section end -->
+
+
+        <!-- conneting header section -->
+        <div class="connecting-header">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="info">
+                            <a href="#" class="number"><i class="fas fa-mobile-alt"></i></i><span>123-456-7890 </span>
+                            </a>
+                            <a href="#" class="message"><i
+                                    class="far fa-envelope"></i><span>info@yourmail.com</span></a>
+
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="login">
+                            <a href="#" class="fab fa-facebook-f icon"></a>
+                            <a href="#" class="fab fa-google-plus icon"> </a>
+                            <a href="#" class="fab fa-twitter icon"></a>
+                            <a href="#" class="fab fa-youtube-square icon"></a>
+                            <a href="#" class="fab fa-instagram icon"></a>
+                            <span class="icon">|</span>
+                            <span class="icon"><a href="#" data-toggle="modal" data-target="#Login">Login</a> </span>
+                            <button class="icon apply">Apply Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- conneting header section end -->
+
+
+        <!-- navigation section -->
+        <div class="navigation">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo_dark" src="image/logo_dark.png" alt="logo">
+
+
+                        <!-- <img class="logo_white" src="image/logo_white.png" alt="logo">
+
+                    <img class="logo_static" src="image/logo_dark.png" alt="logo">      -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end">
+
+                        <ul class="navbar-nav">
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Home
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Home Version 1</a>
+                                    <a class="dropdown-item" href="#">Home Version 2</a>
+                                    <a class="dropdown-item" href="#">Home Version 3</a>
+                                    <a class="dropdown-item" href="#">Home Version 4</a>
+                                    <a class="dropdown-item" href="#">Home Version 5</a>
+                                    <a class="dropdown-item" href="#">Home Version 6</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Course
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class=" dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Event
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Teacher
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form>
+
+                        <button type="submit" class="search-icon">
+                            <i class="fas fa-search"></i></button>
+
+
+                        <div class="form-control">
+
+                            <input type="text" placeholder="Search" id="search_input">
+                            <button class="fas fa-search search"></button>
+                        </div>
+
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <!-- navigation section end -->
+    </header>
+
+
+    <!-- carousel section -->
+    <section id="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- carousel section end -->
+
+
+
+    <section id="chooseEduglobal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="chooseeduglobal">
+                        <h2>Why Choose Eduglobal</h2>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there <br>
+                            isn't anything embarrassing hidden in the middle of text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="courses-card">
+                        <div class="icones book">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Books & Library</h3>
+                        <p>If you are going to use a passage of <br>
+                            Lorem Ipsum, you need to be sure there <br>
+                            isn't anything embarrassing hidden in the <br>
+                            middle of text</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="courses-card">
+                        <div class="icones globus">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Learn Course Online</h3>
+                        <p>If you are going to use a passage of <br>
+                            Lorem Ipsum, you need to be sure there <br>
+                            isn't anything embarrassing hidden in the <br>
+                            middle of text</p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="courses-card">
+                        <div class="icones chalk"> <i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>Expert Instructor</h3>
+                        <p>If you are going to use a passage of <br>
+                            Lorem Ipsum, you need to be sure there <br>
+                            isn't anything embarrassing hidden in the <br>
+                            middle of text</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="category">
+        <div class="container"></div>
+    </section>
+
+
+
+
+
+
+    <section id="coach">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Get The Coaching Training Today!</h2>
+                    <p>If you are going to use a passage of embarrassing hidden in the middle of text
+
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <button class="get-start" type="button">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="bg-dark">
+        <div class="top"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="image/footer_logo.png" alt="" class="foot-logo">
+                    <p>Phasellus blandit massa enim. elit id varius nunc. Lorem ipsum dolor sit amet, consectetur
+                        industry.</p>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href=""> Calefornia Street Franciska, CA </a></li>
+                        <li> <i class="fas fa-map-marker-alt"></i> <a href=""> Info@sitename.com </a></li>
+                        <li> <i class="fas fa-mobile-alt"></i> <a href=""> +457 789789 65 </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Useful Links</h6>
+                    <ul class="links-list">
+                        <li><a href="#">Join Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Recent Posts</h6>
+                    <ul>
+                        <div>
+                            <a>
+                                <img src="image/letest_post1.jpg" alt="">
+                            </a>
+                            <div class="content  ">
+
+                                <a href="" class="">Lorem ipsum dolor sit amet consectetur</a>
+
+
+                            </div>
+
+                        </div>
+
+                        <a href="">
+                            <img src="image/letest_post2.jpg" alt="">
+                        </a>
+                        <div class="content">
+
+                            <a href="">Lorem ipsum dolor sit amet consectetur</a>
+
+                        </div>
+
+
+
+                        <a href="">
+                            <img class="footer-logo" src="image/letest_post3.jpg" alt="">
+                        </a>
+                        <div class="content">
+
+                            <a href="">Lorem ipsum dolor sit amet consectetur</a>
+
+                        </div>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Subscribe Newsletter</h6>
+                    <p>Contrary to popular of Lorem ipsum dolor sit amet consectetur</p>
+                    <div class=" mb-4">
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="Email Address"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-default btn-sm" type="submit" name="submit" id="button-addon2"
+                                    value="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <h6>Follow Us</h6>
+                    <ul class="list-icon">
+                        <li><a href="#" class="fab fa-facebook-f icon"></a></li>
+                        <li><a href="#" class="fab fa-google-plus icon"> </a></li>
+                        <li><a href="#" class="fab fa-twitter icon"></a></li>
+                        <li><a href="#" class="fab fa-youtube-square icon"></a></li>
+                        <li><a href="#" class="fab fa-instagram icon"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom"></div>
+    </footer>
+
+
+
+
+
+    <!-- js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- js file end -->
+
+
+
+</body>
+
+</html>

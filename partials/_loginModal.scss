@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.modal-content{
+    z-index: 99;
+    position: relative;
+    border-radius: 6px;
+    min-height: 58.8%;
+   
+
+}
+.modal-body{
+    padding: 0;
+    height: 540px;
+  
+    
+    
+}
+
+.image{
+    margin: 0px;
+   
+    img{
+        width: 300px;
+        height: 440px;
+    }
+}
+.registration{
+    padding: 20px;
+}

@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+.connecting-header{
+    background-color: $header-color;
+    padding: 12px 0 10px;
+    font-size: $paragraph-shrift;
+    
+    .info{
+        
+      
+        
+        i{
+            font-size: 19px;
+        }
+        span{
+            margin: 7px;
+        }
+    }
+    button{
+        background-color:$primary-color;
+        border:0px;
+        color: white;
+        padding: 7px 15px;
+        border-color: $primary-color;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    .apply{
+        color:white !important;
+    }
+    a{
+        color:white;
+        text-decoration: none;
+        @include transition(color 0.5s); 
+            
+        &:hover{
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+    }
+    .login{
+        color:white;
+        margin-left: 194px;
+        
+        .icon{
+            margin-left: 13px;
+            text-decoration: none;
+            @include transition(color 0.5s); 
+            cursor: pointer;
+            &:hover{
+            color: $primary-color;
+            }
+        
+        }
+    }
+  
+}
+
+   
+ .is-sticky{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    @include transition(all 0.7s); 
+} 
+
+
+nav{
+   a{
+       color: #333333;
+       font-weight: bold;
+       font-family: sans-serif;
+   }
+  
+    
+    .form-control{
+        
+        display: none;
+        margin-right: 30px;
+        position: absolute;
+        z-index: 3;
+        right: 0px;
+      top: 65px;
+        width: 260px;
+        padding: 34px 20px;
+        box-shadow: 0.1px -0.8px 3.3px 1.2px;
+       font-family: "Roboto', sans-serif";
+       .search{
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        z-index: 1;
+        top: 18px;
+        right: 20px;
+        font-size: 23px;
+        color: #777
+       }
+    
+         #search_input{
+position: absolute;
+top: 0; 
+padding: 10px 20px;
+margin-top: 8px;
+border-radius: 2px;
+
+}
+        } 
+    }
+    form{
+        padding: 10px 20px;
+
+        
+     
+     
+           
+        }
+       
+        .search-icon{
+            border:0px;
+            background-color: #fff;
+            transition: all 1.5s;
+           
+        }
+        ul{
+            li{
+                a{
+                    @include transition(color 0.5s) ;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        
+    
+    
+    
+    
+      
+
+
+
+
+
+
