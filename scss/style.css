@@ -120,7 +120,6 @@ body {
   color: #DF9C00;
 }
 
-<<<<<<< HEAD
 .is-sticky {
   position: fixed;
   z-index: 50;
@@ -132,8 +131,6 @@ body {
   transition: all 0.7s;
 }
 
-=======
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 nav a {
   color: #333333;
   font-weight: bold;
@@ -180,11 +177,8 @@ form {
 .search-icon {
   border: 0px;
   background-color: #fff;
-<<<<<<< HEAD
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
-=======
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 }
 
 ul li a {
@@ -201,13 +195,10 @@ ul li a:hover {
           box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 #carousel .carousel-item {
   height: 640px;
 }
 
-=======
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -224,11 +215,7 @@ ul li a:hover {
 
 .modal-body {
   padding: 0;
-<<<<<<< HEAD
   height: 540px;
-=======
-  height: 440px;
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 }
 
 .image {
@@ -251,11 +238,7 @@ footer input {
 }
 
 footer .top {
-<<<<<<< HEAD
   padding: 40px 0;
-=======
-  padding: 80px 0;
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 }
 
 footer h6 {
@@ -263,7 +246,6 @@ footer h6 {
   font: 18px Rubik, sans-serif;
   color: white;
   text-transform: capitalize;
-<<<<<<< HEAD
 }
 
 footer p {
@@ -272,16 +254,6 @@ footer p {
   margin-top: 23px;
 }
 
-=======
-}
-
-footer p {
-  font: 14px Roboto, sans-serif;
-  color: white;
-  margin-top: 23px;
-}
-
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 footer ul li {
   list-style-type: none;
   display: inline-block;
@@ -307,7 +279,6 @@ footer .list-icon li {
   margin-left: 4px;
 }
 
-<<<<<<< HEAD
 footer .list-icon li a {
   -webkit-transition: all 0.8S;
   transition: all 0.8S;
@@ -318,8 +289,6 @@ footer .list-icon li a:hover {
           transform: rotate(-45deg);
 }
 
-=======
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 footer .links-list li {
   display: block;
   -webkit-transition: all 0.5s;
@@ -331,7 +300,6 @@ footer .links-list li:hover {
           transform: translateX(11px);
 }
 
-<<<<<<< HEAD
 footer .content {
   display: inline-block;
 }
@@ -390,12 +358,5 @@ footer .content {
 
 #chooseEduglobal .globus {
   background-color: #FFBC0A;
-=======
-footer .content img {
-  margin-right: 10px;
-  width: 100px;
-  float: left;
-  max-width: 60px;
->>>>>>> 46c5e20a616b2ae33851a17357499f0a2af63dbe
 }
 /*# sourceMappingURL=style.css.map */

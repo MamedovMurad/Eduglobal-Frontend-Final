@@ -60,6 +60,9 @@
 }
 
    
+  .navigation{
+    
+  }
  .is-sticky{
     position: fixed;
     z-index: 50;
@@ -130,7 +133,8 @@ border-radius: 2px;
         ul{
             li{
                 a{
-                    @include transition(color 0.5s) ;
+                    @include transition(color 0.5s) 
+
                     &:hover{
                         color: $primary-color;
                     }
