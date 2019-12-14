@@ -71,7 +71,20 @@ ul{
         display: inline-block;
     }
    
-  
-
 }
-
+.bottom1{
+    background-color: #222;
+    padding: 10px;
+    width: 100%;
+    .container{
+       p{
+           color: white;
+           padding-top: 25px;
+           font-family: serif;
+       }
+       .right{
+           padding-left: 290px;
+           
+       }
+    }
+}

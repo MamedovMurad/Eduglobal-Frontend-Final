@@ -2,7 +2,7 @@
     background-color: #F7F7F7;
     .chooseeduglobal{
         text-align: center;
-        margin-top: 100px;
+        margin-top: 80px;
         p{
             color: #777777;
             font-size: 18px;
@@ -15,22 +15,39 @@
         padding: 18px;
         border-radius: 14px;
         margin-bottom: 100px;
+        @include transition(all 0.7s);
+        &:hover{
+            transform: translateY(-15px);
+        }
+        &:hover i{
+ border: 4px solid white;
+                border-radius: 100%;
+                
+        }
         p{
             color: #777;
             font-size: 17px;
         }
         .icones{
-            margin-bottom: 25px;
+            margin-bottom: 10px;
             display: inline-block;
             text-align: center;
-            width: 45%;
-          padding: 34px;
+            width: 35%;
+         padding: 50px 20px;
            border-radius: 100%;
-           height: 140px;
-           margin-top: 20px;
-            i{
-                font-size: 70px;
+           height: 105px;
+           margin-top: 0px;
+            i{display: inline-block;
+                
+                font-size: 47px;
                 color: white;
+               @include transition(all 0.4s);
+              margin: -43px -15px 16px; 
+               width: 95px;
+              height: 91px; 
+              padding: 25px 18px;
+               
+
             }
         }
     } .chalk{
