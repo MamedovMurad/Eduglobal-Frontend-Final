@@ -35,3 +35,10 @@ $(window).scroll(function () {
         $(".navigation").removeClass("is-sticky");
     }
 }); 
+/*  $(".companies-slider").slick({
+    dots:false,
+    slidesToShow:1,
+    slidesToScroll:6,
+    touchMove:false
+
+})  */

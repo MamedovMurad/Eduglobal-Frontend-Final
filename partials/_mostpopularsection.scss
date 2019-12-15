@@ -1,4 +1,9 @@
+body{
+    overflow: auto;
+}
 #mostpopular{
+    
+    @include transition(all 1.7s);
     cursor: pointer;
     margin-top: 95px;
     margin-bottom: 95px;
