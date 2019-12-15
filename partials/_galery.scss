@@ -1,0 +1,49 @@
+#galery{
+    .col-lg-12{
+        text-align: center;
+        button{
+            padding: 4px;
+            width: 80px;
+            border: none;
+            margin-bottom: 40px;
+            margin-left: 5px;
+            border-radius: 4px;
+        }
+        .first{
+            color: white;
+            background-color:$primary-color;
+        }
+    }
+    margin: 50px 0 50px;
+    .col-lg-4{
+        position: relative;
+        .title{
+            width: 340px;
+            height: 50px;
+            position: absolute;
+            top: 1;
+            left: 21px;
+            z-index: 1;
+           background-color: #222;
+            opacity: 0;
+            padding: 113px 0;
+            color: white;
+            border-radius: 6px;
+            transition: all 0.5s;
+            font-size: 29px;
+            text-align: center;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    .img{
+
+       
+        padding: 6px;
+       img{
+           width: 340px;
+           border-radius: 6px;
+       }
+    }
+}
+}

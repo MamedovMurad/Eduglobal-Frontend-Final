@@ -1,0 +1,31 @@
+#parallax{
+    position: relative;
+    background-image: url("../image/counter_bg.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-attachment: fixed;
+    @include transition(all .6s);
+    .parallax-overlay{
+        background-color: rgba(38, 92, 114, 0.747);
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        text-align: center;
+        i{
+            font-size: 40px;
+            color: white;
+        }
+        span{
+            color:white;
+            font-size: 35px;
+        }
+        p{
+            color: white;
+        }
+    }
+    .col-lg-3{
+padding-top: 80px;
+    }
+
+    
+}

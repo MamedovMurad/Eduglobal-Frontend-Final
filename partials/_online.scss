@@ -1,0 +1,40 @@
+#online-course{
+    background-color: #07294D;
+    position: relative;
+    .col-lg-6{
+        padding-top: 50px;
+    }
+   
+    .forms{
+        border-radius: 7px;
+        p{
+            padding: 15px 0 10px;
+            margin: 10px 0 15px 0;
+            color: white;
+        }
+        position: absolute;
+        top: 70px;
+        left: 30px;
+        background-color: rgba(32, 64, 95, 0.514);
+        h2{color: white;
+            span{
+                color: $primary-color;
+            }
+        }
+        padding: 15px;
+        height: 420px;
+        input{
+            margin: 10px 10px 10px 0;
+            height: 40px;
+            border-radius: 4px;
+            border: none;
+            background-color:rgba(32, 64, 95, 0.514) ;
+            color: white;
+        }
+        .area{
+            display: block;
+            width: 91.6%;
+            height: 70px;
+        }
+    }
+}

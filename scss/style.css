@@ -197,6 +197,11 @@ ul li a:hover {
           box-sizing: border-box;
 }
 
+#carousel .carousel-control-prev {
+  position: absolute;
+  z-index: 2;
+}
+
 #carousel .carousel-control-prev .carousel-control-prev-icon {
   background-color: rgba(12, 12, 12, 0.849);
   width: 30px;
@@ -204,7 +209,12 @@ ul li a:hover {
   border-radius: 80%;
 }
 
-#carousel .carousel-control-next-icon {
+#carousel .carousel-control-next {
+  position: absolute;
+  z-index: 2;
+}
+
+#carousel .carousel-control-next .carousel-control-next-icon {
   background-color: rgba(12, 12, 12, 0.849) !important;
   width: 30px;
   height: 30px;
@@ -215,20 +225,46 @@ ul li a:hover {
   height: 640px;
 }
 
-#carousel .btn-sm {
+#carousel .btn-default {
   position: absolute;
   z-index: 2;
-  top: -20%;
-  left: 400px;
+  top: 130px;
+  left: 230px;
+  padding: 15px;
+  width: 160px;
 }
 
 #carousel .btn-outline-white {
   position: absolute;
   z-index: 2;
-  top: -20%;
-  right: 400px;
-  padding: 10px;
-  border-radius: 4px;
+  top: 130px;
+  right: 230px;
+  padding: 15px;
+  border-radius: 5px;
+  width: 160px;
+}
+
+#carousel .text-center {
+  position: absolute;
+  top: -350px;
+}
+
+#carousel h2 {
+  font-size: 42px;
+}
+
+#carousel p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#carousel .overlay {
+  position: absolute;
+  background-color: rgba(37, 36, 36, 0.63);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 * {
@@ -523,6 +559,7 @@ footer .bottom .bottom-link li a {
 }
 
 #coach {
+  position: relative;
   background-color: #FFBC09;
   padding: 54px 0;
 }
@@ -629,8 +666,30 @@ body {
   box-shadow: -8px 2px 21px -7px;
   width: 800px;
   border-radius: 0px 200px 200px  0;
-  height: 340px;
+  height: 370px;
   padding: 40px;
+}
+
+#iframe .content .key-1 {
+  color: #F5586D;
+}
+
+#iframe .content .key-2 {
+  color: #B3D36A;
+}
+
+#iframe .content .key {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+#iframe .content .value {
+  font-weight: bolder;
+}
+
+#iframe .content .statistic {
+  display: inline-block;
+  padding-left: 22px;
 }
 
 #iframe .picture {
@@ -708,7 +767,7 @@ body {
           box-shadow: -8px 2px 21px -10px;
   margin-top: 16px;
   border-radius: 10px;
-  height: 440px;
+  height: 457px;
 }
 
 #our-courses .course .sekil {
@@ -1014,5 +1073,199 @@ button:focus {
 
 .btn.btn-lg i {
   font-size: 28px;
+}
+
+#parallax {
+  position: relative;
+  background-image: url("../image/counter_bg.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  background-attachment: fixed;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#parallax .parallax-overlay {
+  background-color: rgba(38, 92, 114, 0.747);
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  text-align: center;
+}
+
+#parallax .parallax-overlay i {
+  font-size: 40px;
+  color: white;
+}
+
+#parallax .parallax-overlay span {
+  color: white;
+  font-size: 35px;
+}
+
+#parallax .parallax-overlay p {
+  color: white;
+}
+
+#parallax .col-lg-3 {
+  padding-top: 80px;
+}
+
+#event {
+  margin: 50px 0 60px;
+}
+
+#event .col-lg-12 {
+  text-align: center;
+}
+
+#event .card {
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0.4px 0px 5px 0.3px;
+          box-shadow: 0.4px 0px 5px 0.3px;
+  border: none;
+}
+
+#event .card a {
+  color: #333;
+  text-decoration: none;
+}
+
+#event .card img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#event .card:hover img {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+#event .card .history {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  background-color: #fff;
+  border-radius: 6px;
+  width: 80px;
+  font-size: 17px;
+}
+
+#event .card .history .clock {
+  background-color: #DF9C00;
+  color: white;
+  border-radius: 0 0 6px 6px;
+}
+
+#event .card .history p {
+  margin: 0%;
+}
+
+#online-course {
+  background-color: #07294D;
+  position: relative;
+}
+
+#online-course .col-lg-6 {
+  padding-top: 50px;
+}
+
+#online-course .forms {
+  border-radius: 7px;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  background-color: rgba(32, 64, 95, 0.514);
+  padding: 15px;
+  height: 420px;
+}
+
+#online-course .forms p {
+  padding: 15px 0 10px;
+  margin: 10px 0 15px 0;
+  color: white;
+}
+
+#online-course .forms h2 {
+  color: white;
+}
+
+#online-course .forms h2 span {
+  color: #DF9C00;
+}
+
+#online-course .forms input {
+  margin: 10px 10px 10px 0;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(32, 64, 95, 0.514);
+  color: white;
+}
+
+#online-course .forms .area {
+  display: block;
+  width: 91.6%;
+  height: 70px;
+}
+
+#galery {
+  margin: 50px 0 50px;
+}
+
+#galery .col-lg-12 {
+  text-align: center;
+}
+
+#galery .col-lg-12 button {
+  padding: 4px;
+  width: 80px;
+  border: none;
+  margin-bottom: 40px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+#galery .col-lg-12 .first {
+  color: white;
+  background-color: #DF9C00;
+}
+
+#galery .col-lg-4 {
+  position: relative;
+}
+
+#galery .col-lg-4 .title {
+  width: 340px;
+  height: 50px;
+  position: absolute;
+  top: 1;
+  left: 21px;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0;
+  padding: 113px 0;
+  color: white;
+  border-radius: 6px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 29px;
+  text-align: center;
+}
+
+#galery .col-lg-4 .title:hover {
+  opacity: 0.6;
+}
+
+#galery .col-lg-4 .img {
+  padding: 6px;
+}
+
+#galery .col-lg-4 .img img {
+  width: 340px;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=style.css.map */

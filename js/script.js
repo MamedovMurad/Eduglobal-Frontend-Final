@@ -8,6 +8,20 @@ $(".search-icon").hover(function(e){
      $(".form-control").slideToggle();
     
 });
+if ($("#iframe").length) {
+    $('#iframe .key').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+   
+};
+if ($("#parallax").length) {
+    $('#parallax .key').counterUp({
+        delay: 29,
+        time: 1000
+    });
+}
 $(".dropdown").hover(function () {
     $(this).addClass("show");
     $(this).find(".dropdown-menu").addClass("show");
